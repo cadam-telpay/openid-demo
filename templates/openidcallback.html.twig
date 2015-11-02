@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+{% block title %}OpenID Tech Demo{% endblock %}
+{% block container %}
+    <section>
+        <div class="pull-right">
+            <a class="btn btn-default" id="signout" href="javascript:void(0)">Sign Out</a>
+        </div>
+
+        <h1>The callback page</h1>
+
+
+        <p>
+            This page is called by QBO after authentication.
+        </p>
+
+        <p>
+            The value of authenticated is: {{ authenticated ? 'true' : 'false' }}
+        </p>
+
+        <p>
+            The value of the token is '{{ tk }}' (will be blank if not authenticated)
+        </p>
+
+        <p>
+            The email in the url is  '{{ email }}'
+        </p>
+
+        <p>
+            Validity?  '{{ valid }}'
+        </p>
+
+        <p>
+            <h3>Output</h3>
+            <div class="panel">
+            <pre>{{ attributes |json_encode(constant('JSON_PRETTY_PRINT')) }}
+            </pre></div>
+        </p>
+
+    </section>
+{% endblock %}
