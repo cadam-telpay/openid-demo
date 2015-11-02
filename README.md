@@ -1,3 +1,12 @@
+# Quickbooks Online OpenID Tech Demo
+
+This is for the 2015 QB hackathon and demonstrates using OpenID as an authentication provider for app sign-in.
+
+The framework is based on the Slim Framework Skeleton Application (original readme below). All vendor files are included in this repo, so there should be no need to `grunt dist` or `npm install`.
+
+------
+
+
 # Slim Framework Skeleton Application with Bootstrap 3 and LESS
 
 Based on [Slim-Skeleton](https://github.com/codeguy/Slim-Skeleton) by Josh Lockhart.
